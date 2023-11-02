@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header">
+
+        <nav class="nav">
+           
+            <ul>
+            
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./personajes.html">Personajes</a></li>
+                <li><a href="./#">Libros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./#">Tienda</a></li>
+    
+            </ul>
+            <div class="logo">
+            <p class="pIcon">Sherlock Holmes</p>
+            <div class="icon" >
+                <img src="./imgSherlock/icono2.png" alt="Logo de la página" width="42">   
+            </div>
+            </div>
+        </nav>
+       
+    </header>
+<main class="main">
+    <div class="titulo">
+        <div class="img">
+            <img src="./imgSherlock/icono2.png" alt="Logo de la página">
+        </div>
+        <h1>¡Contactanos!</h1>
+    </div>
+    
+
+        <form action="">
+
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre"pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" required/>
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/>
+            </div>
+
+            <div>
+                <label for="pais">Seleccione su pais:</label>
+                <select id="pais">
+                    <option value="argentina" selected>Argentina</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="argentina">Bolivia</option>
+                    <option value="argentina">Chile</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                <label>¿Vivis en argentina?:</label>
+                <input type="radio" name="vivisEnArg">SI
+                <input type="radio" name="vivisEnArg">NO
+            </div>
+
+            <div>
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" id="asunto" required maxlength="10" minlength="3">
+            </div>
+
+            <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" rows="10"></textarea>
+            </div>
+
+            
+            <div>
+                <button type="submit">
+                    ENVIAR
+                </button>
+            </div>
+
+
+        </form>
+
+    </main>   
+
+
+
+</body>
+</html>
