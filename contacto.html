@@ -37,56 +37,68 @@
         <h1>¡Contactanos!</h1>
     </div>
     
+    <div class="contenedorFormulario">
 
-        <form action="">
+        <form action="" method="get" enctype="multipart/form-data" class="formulario"> 
+            <fieldset>
+                <legend> Formulario de contacto </legend>
 
             <div>
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre"pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" required/>
             </div>
-
+            <br>
+            <div>
+                <label for="fechaNacimiento"> Fecha de nacimiento </label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+            </div>
+            <br>
             <div>
                 <label for="email">E-mail</label>
                 <input type="text" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/>
             </div>
-
+            <br>
             <div>
                 <label for="pais">Seleccione su pais:</label>
-                <select id="pais">
+                <select type="selected" id="pais" name="pais" required>
                     <option value="argentina" selected>Argentina</option>
                     <option value="uruguay">Uruguay</option>
                     <option value="argentina">Bolivia</option>
                     <option value="argentina">Chile</option>
                     <option value="otro">Otro</option>
                 </select>
-            </div>
+            </div><br>
 
             <div>
                 <label>¿Vivis en argentina?:</label>
-                <input type="radio" name="vivisEnArg">SI
-                <input type="radio" name="vivisEnArg">NO
-            </div>
+                <input type="radio" id="vivisEnArg" name="vivisEnArg">SI
+                <input type="radio" id="vivisEnArg" name="vivisEnArg">NO
+            </div><br>
 
             <div>
                 <label for="asunto">Asunto</label>
                 <input type="text" name="asunto" id="asunto" required maxlength="10" minlength="3">
-            </div>
+            </div><br>
 
             <div>
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" rows="10"></textarea>
+                <textarea name="mensaje" type="textarea" id="mensaje" rows="10"></textarea>
             </div>
 
-            
+            <div>
+                <input type="checkbox" name="acepta" value="1">
+                Acepta términos y condiciones
+            </div>
+
             <div>
                 <button type="submit">
                     ENVIAR
                 </button>
             </div>
 
-
+            </fieldset>
         </form>
-
+    </div>
     </main>   
 
 
